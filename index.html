@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriConsult  - Professional Agriculture Consultancy Service</title>
+    <meta name="description"
+        content="Professional agriculture consultancy services in . Expert guidance for farmers in farm management, crop planning, soil health, and sustainable practices.">
+    <meta property="og:title" content="AgriConsult  - Agriculture Consultancy">
+    <meta property="og:description"
+        content="Transform your farm with expert guidance. Professional agriculture consultancy services in Bulaki Wala, Uttarakhand.">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=630">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-seedling nav-icon"></i>
+                <span class="nav-title">AgriConsult</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link" data-translate="nav.home">Home</a>
+                <a href="#about" class="nav-link" data-translate="nav.about">About Us</a>
+                <div class="nav-dropdown">
+                    <a href="#services" class="nav-link dropdown-toggle" data-translate="nav.services">
+                        Our Services <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#services" class="dropdown-item" data-translate="nav.farmManagement">Farm
+                            Management</a>
+                        <a href="#services" class="dropdown-item" data-translate="nav.cropPlanning">Crop Planning</a>
+                        <a href="#services" class="dropdown-item" data-translate="nav.soilHealth">Soil Health</a>
+                        <a href="#services" class="dropdown-item" data-translate="nav.precisionFarming">Precision
+                            Farming</a>
+                    </div>
+                </div>
+                <a href="#testimonials" class="nav-link" data-translate="nav.stories">Success Stories</a>
+                <a href="#news" class="nav-link" data-translate="nav.news">News & Tips</a>
+                <a href="#contact" class="nav-link" data-translate="nav.contact">Contact Us</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="lang-toggle" id="langToggle">
+                    <i class="fas fa-globe"></i>
+                    <span id="langText">EN | हिं</span>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <section id="home" class="hero-section">
+        <div class="hero-background"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title" data-translate="hero.title">Transform Your Farm with Expert Guidance</h1>
+            <p class="hero-subtitle" data-translate="hero.subtitle">Professional agriculture consultancy services in
+                Uttarakhand. From soil health to sustainable practices, we help farmers achieve maximum productivity and
+                profitability.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('contact')"
+                    data-translate="hero.consultationBtn">
+                    <i class="fas fa-calendar-check"></i>
+                    Request Free Consultation
+                </button>
+                <button class="btn btn-secondary" onclick="scrollToSection('services')"
+                    data-translate="hero.exploreBtn">
+                    <i class="fas fa-arrow-down"></i>
+                    Explore Our Services
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2 class="section-title" data-translate="about.title">About AgriConsult </h2>
+                    <p class="about-text" data-translate="about.description1">Based in Bulaki Wala, , we are
+                        a leading agriculture consultancy service dedicated to empowering farmers and agribusinesses
+                        across the region. With over a decade of experience in sustainable farming practices, we provide
+                        comprehensive solutions tailored to the unique challenges of Himalayan agriculture.</p>
+                    <p class="about-text" data-translate="about.description2">Our team of certified agricultural experts
+                        combines traditional farming wisdom with modern technology to help you achieve optimal crop
+                        yields, improve soil health, and maximize profitability while maintaining environmental
+                        sustainability.</p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label" data-translate="about.happyFarmers">Happy Farmers</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">12</div>
+                            <div class="stat-label" data-translate="about.yearsExperience">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">95%</div>
+                            <div class="stat-label" data-translate="about.successRate">Success Rate</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+                        alt="Agricultural consultation meeting">
+                    <div class="certification-badge">
+                        <div class="badge-title">Certified</div>
+                        <div class="badge-subtitle">Agriculture Experts</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-translate="services.title">Our Comprehensive Services</h2>
+                <p class="section-subtitle" data-translate="services.subtitle">From farm planning to harvest
+                    optimization, we provide end-to-end agricultural consultancy services designed to boost your
+                    productivity and profitability.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="service-title" data-translate="services.farmManagement.title">Farm Management</h3>
+                    <p class="service-description" data-translate="services.farmManagement.description">Comprehensive
+                        farm planning, resource optimization, and operational efficiency strategies tailored to your
+                        specific crops and land conditions.</p>
+                    <button class="service-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3 class="service-title" data-translate="services.cropPlanning.title">Crop Planning</h3>
+                    <p class="service-description" data-translate="services.cropPlanning.description">Strategic crop
+                        selection, rotation planning, and seasonal timing optimization based on local climate and market
+                        conditions.</p>
+                    <button class="service-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3 class="service-title" data-translate="services.soilHealth.title">Soil Health Management</h3>
+                    <p class="service-description" data-translate="services.soilHealth.description">Professional soil
+                        testing, nutrient analysis, and customized fertilization programs to maintain optimal soil
+                        conditions.</p>
+                    <button class="service-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-satellite"></i>
+                    </div>
+                    <h3 class="service-title" data-translate="services.precisionFarming.title">Precision Farming</h3>
+                    <p class="service-description" data-translate="services.precisionFarming.description">Modern
+                        technology integration including GPS mapping, drone monitoring, and data-driven farming
+                        techniques.</p>
+                    <button class="service-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3 class="service-title" data-translate="services.pestControl.title">Pest & Disease Control</h3>
+                    <p class="service-description" data-translate="services.pestControl.description">Integrated pest
+                        management strategies using eco-friendly solutions to protect crops while maintaining
+                        environmental balance.</p>
+                    <button class="service-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3 class="service-title" data-translate="services.financialPlanning.title">Financial Planning</h3>
+                    <p class="service-description" data-translate="services.financialPlanning.description">Agricultural
+                        loan guidance, subsidy assistance, insurance planning, and profitability analysis for
+                        sustainable growth.</p>
+                    <button class="service-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-translate="testimonials.title">Success Stories</h2>
+                <p class="section-subtitle" data-translate="testimonials.subtitle">Real results from farmers across
+                    Uttarakhand</p>
+            </div>
+            <div class="testimonials-grid" id="testimonialsGrid">
+               
+            </div>
+        </div>
+    </section>
+    <section id="news" class="news-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-translate="news.title">News & Expert Tips</h2>
+                <p class="section-subtitle" data-translate="news.subtitle">Stay updated with latest agricultural
+                    insights and best practices</p>
+            </div>
+            <div class="news-grid" id="newsGrid">
+            </div>
+
+            <div class="news-cta">
+                <button class="btn btn-primary" data-translate="news.viewAll">
+                    View All Articles <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-translate="contact.title">Get Expert Consultation</h2>
+                <p class="section-subtitle" data-translate="contact.subtitle">Ready to transform your farming? Let's
+                    discuss your specific needs.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-form-container">
+                    <h3 class="form-title" data-translate="contact.formTitle">Request Free Consultation</h3>
+                    <form id="consultationForm" class="consultation-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label data-translate="contact.name">Full Name *</label>
+                                <input type="text" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label data-translate="contact.phone">Phone Number *</label>
+                                <input type="tel" name="phone" placeholder="+91 XXXXX XXXXX" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label data-translate="contact.email">Email Address *</label>
+                            <input type="email" name="email" placeholder="your.email@example.com" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label data-translate="contact.location">Farm Location</label>
+                                <input type="text" name="location" placeholder="Village, District">
+                            </div>
+                            <div class="form-group">
+                                <label data-translate="contact.farmSize">Farm Size (Acres)</label>
+                                <input type="number" name="farmSize" placeholder="e.g., 5">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label data-translate="contact.service">Service Interest</label>
+                            <select name="service">
+                                <option value="">Select a service</option>
+                                <option value="farm-management">Farm Management</option>
+                                <option value="crop-planning">Crop Planning</option>
+                                <option value="soil-health">Soil Health Management</option>
+                                <option value="precision-farming">Precision Farming</option>
+                                <option value="pest-control">Pest & Disease Control</option>
+                                <option value="financial-planning">Financial Planning</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label data-translate="contact.details">Additional Details</label>
+                            <textarea name="details" rows="4"
+                                placeholder="Tell us about your current challenges, crops you grow, or specific questions..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full" data-translate="contact.submit">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Consultation Request
+                        </button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3 class="contact-info-title" data-translate="contact.office">Visit Our Office</h3>
+
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4 data-translate="contact.address">Address</h4>
+                            <p>AgriConsult<br>
+                            Agra - Etawah Highway Road, near Govt. Primary School, <br>
+                                Kathfori, Kathaphori, Uttar Pradesh 283142</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 7417434709<br>
+                                +91 9315248359</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>atulbeejagency@gmail.com<br>
+                                </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4 data-translate="contact.hours">Office Hours</h4>
+                            <p>Monday - Saturday: 9:00 AM - 6:00 PM<br>
+                                Sunday: Closed</p>
+                        </div>
+                    </div>
+                <a href="https://maps.app.goo.gl/aSzTzcbEo9SaEejN8" target="_blank"
+                    style="text-decoration: none; color: inherit;">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map"></i>
+                        <p>Interactive Map<br>
+                            <small>Kathfori , Uttar Pradesh</small>
+                        </p>
+                    </div>
+                </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-seedling"></i>
+                        <span>AgriConsult</span>
+                    </div>
+                    <p data-translate="footer.description">Empowering farmers across Uttarakhand with expert
+                        agricultural guidance and sustainable farming solutions.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4 data-translate="footer.quickLinks">Quick Links</h4>
+                    <ul>
+                        <li><a href="#about" data-translate="nav.about">About Us</a></li>
+                        <li><a href="#services" data-translate="nav.services">Our Services</a></li>
+                        <li><a href="#testimonials" data-translate="nav.stories">Success Stories</a></li>
+                        <li><a href="#news" data-translate="nav.news">News & Tips</a></li>
+                        <li><a href="#contact" data-translate="nav.contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4 data-translate="footer.services">Services</h4>
+                    <ul>
+                        <li><a href="#services">Farm Management</a></li>
+                        <li><a href="#services">Crop Planning</a></li>
+                        <li><a href="#services">Soil Health</a></li>
+                        <li><a href="#services">Precision Farming</a></li>
+                        <li><a href="#services">Pest Control</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4 data-translate="footer.contactInfo">Contact Info</h4>
+                    <ul>
+                        <li>Kathfori Firozabad, Uttra Pradesh</li>
+                        <li>+91 7417434709</li>
+                        <li>atulbeejagency@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p data-translate="footer.copyright">© 2013 AgriConsult. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#" data-translate="footer.privacy">Privacy Policy</a>
+                    <a href="#" data-translate="footer.terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="scroll-top-btn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="index.js"></script>
+</body>
+
+</html>
